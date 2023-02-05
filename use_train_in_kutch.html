@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* position: sticky; */
+            top: 0;
+            cursor: pointer;
+            
+            
+
+        }
+        .nav-list{
+            width: 70%;
+            /* background: pink; */
+            display: flex;
+            align-items: center
+
+        }
+        .Logo{
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-list li{
+            list-style: none;
+            padding: 19px 28px;
+        
+
+        }
+        .nav-list li a{
+            text-decoration: none;
+            color: rgb(22, 22, 22);
+
+        }
+        .nav-list li a:hover{
+            text-decoration: none;
+            color: gray;
+
+        }
+        .right-nav {
+            /* background: greenyellow; */
+            width: 20%;
+            text-align: end;
+        }
+        h4:hover{
+            color: gray;
+            cursor: pointer;
+        }
+ 
+.background{
+    /*                 background: url('https://www.gujarattourism.com/content/dam/gujrattourism/images/religious-sites/narayan-sarovar/Narayan-Sarovar-banner.jpg') ; */
+    background-size: cover;
+    /* background-blend-mode: darken; */
+}
+.first_section{
+    height: 100vh;
+}
+#search{
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+.burger{
+    display: none;
+position: absolute;
+cursor: pointer;
+right: 5%;
+top: 15px;
+}
+.line{
+    width: 33px;
+    background-color:white ;
+    height: 4px;
+    margin: 6px 3px;
+}
+@media screen and (max-width: 1290px) {
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 400px;
+        flex-direction: column;
+        transition: all 0.9s ease-out;
+    }
+    .right-nav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+  }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="Logo">
+                <H4> GUJARAT પરિભ્રમણ</H4>
+            </div>
+            <li><a href="">HOME</a></li>
+            <li><a href="">VADODARA </a></li>
+            <li><a href="">KUTCH</a></li>
+            <li><a href="">AHMEDABAD</a></li>
+            <li><a href="">JUNAGADH</a></li>
+        </ul>
+        <div class="right-nav v-class-resp ">
+        <input type="text" class="search" id="search"> 
+        <button class="btn-sn">search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+
+
+        </div>
+    </nav>
+    <script>
+        burger = document.querySelector('.burger')
+        navbar = document.querySelector('.navbar')
+        navlist = document.querySelector('.nav-list')
+        rightnav = document.querySelector('.right-nav')
+
+        burger.addEventListener('click', ()=> {
+            rightnav.classList.toggle('v-class-resp')
+            navlist.classList.toggle('v-class-resp')
+            navbar.classList.toggle('h-nav-resp')
+
+
+            }) 
+    </script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: 0.2s linear;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 60px;
+            overflow: hidden;
+            /* background: linear-gradient(65deg, blue 50%,#333 50.1% ); */
+        }
+        .container{
+            background: white;
+            height: 450px;
+            width: 950px;
+            display: flex;
+            box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+        }
+        .container .card_List{
+            width: 20%;
+            padding: 10px;
+            padding-right: 0;
+            overflow-y: scroll;
+        }
+
+
+        /* code for scrool bar  */
+        .container .card_List::-webkit-scrollbar{
+            width: 7px;
+          
+        }
+        .container .card_List::-webkit-scrollbar-track{
+            background: #ccc;
+            border-radius: 50px;
+          
+        }
+        .container .card_List::-webkit-scrollbar-thumb{
+            background: #666;
+            border-radius: 50px;
+          
+        }
+
+        
+        
+        .container .card_List img{
+            width: 100%;
+            object-fit: cover;
+            height: 105px;
+            padding: 10px;
+            cursor: pointer;
+        } 
+        /* .container .card_List .box img:active,
+        .container .card_List .box img:hover{
+            background: blue;
+            box-shadow: 0 0 0 4px #333 ;
+        } */
+        .container .main_card{
+            width: 80%;
+            padding: 10px;
+
+        }
+        .container .main_card img{
+            height: 100%;
+            width: 100%;
+            outline: none;
+            padding: 10px;
+            /* background: blue; */
+            box-shadow: 0 0 0 4px #333 inset;
+        }
+
+
+        h1 {
+  text-align: center;
+  margin: 50px;
+}
+
+.box {
+    width: 100%;
+    height: 23%;
+  /* background: url(https://images.pexels.com/photos/1203803/pexels-photo-1203803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); */
+  background-size: cover;
+  background-position: center;
+  /* margin: 10px auto; */
+}
+
+.overlay {
+    width: 88%;
+    height: 85%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    opacity: 0;
+    transition: all .5s;
+    margin: -98px 11px;
+}
+
+.content {
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  transform: translateZ(50%);
+  transition: all .5s;
+      margin: -1px 0px;
+    padding: 31px 1px;
+}
+
+.box:hover .content {
+  transform: translateX(0);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box:hover .overlay {
+  opacity: 1;
+}
+
+/* css for main contect  */
+h1 {
+  text-align: center;
+  margin: 50px;
+}
+
+.main_box {
+    width: 100%;
+    height: 100%;
+  /* background: url(https://images.pexels.com/photos/1203803/pexels-photo-1203803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); */
+  background-size: cover;
+  background-position: center;
+   background-color: rgba(0, 0, 0, 0.5);
+  /* margin: 10px auto; */
+}
+
+.main_overlay {
+    width: 97%;
+    height: 97%;
+    /* background: rgba(0,0,0,0.5); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /* transition: all .5s; */
+        margin: -427px 11px;
+}
+
+.main_contect {
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  transform: translateZ(50%);
+  transition: all .5s;
+     margin: 87px -1px;
+    padding: 77px 0px;
+     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main_box:hover .main_contect {
+  transform: translateX(0);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.main_box:hover .main_overlay {
+  opacity: 1;
+ 
+}
+
+.main_contect p {
+    margin: 20px 30px ;
+    padding: 20px 20px ;
+    font-size: 23px;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card_List">
+            <div class="box" >
+                <img class="active" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/cd/e0/8d/dattatreya-temple.jpg?w=600&h=-1&s=1" alt="">
+                <div class="overlay">
+                    <div class="content">
+                    <h3>Dattatreya Temple</h3>
+                    
+                  </div>
+                </div>
+                
+              </div> 
+
+              <div class="box" >
+                <img src="https://touristinformationcenter.net/wp-content/uploads/2021/09/Goddess-Ambe-Temple.jpg" alt="">
+                <div class="overlay">
+                    <div class="content">
+                    <h3>Goddess Ambe </h3>
+                    
+                  </div>
+                </div>
+                
+              </div> 
+
+              <div class="box" >
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Jain_temples_on_Girnar_mountain_aerial_view.jpg" alt="">
+                <div class="overlay">
+                    <div class="content">
+                    <h3>Jain Derasar</h3>
+                    
+                  </div>
+                </div>
+                
+              </div> 
+              <div class="box" >
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Girnar_Ropeway.jpg" alt="">
+                <div class="overlay">
+                    <div class="content">
+                    <h3>Girnar Ropeway</h3>
+                    
+                  </div>
+                </div>
+                
+              </div> 
+              <div class="box" >
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Girnar_1.jpg" alt="">
+                <div class="overlay">
+                    <div class="content">
+                    <h3>Girnar</h3>
+                    
+                  </div>
+                </div>
+                
+              </div> 
+              <div class="box" >
+                <img class="active" src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Chaumukhiji_temple%2C_Girnar.jpg" alt="">
+                <div class="overlay">
+                    <div class="content">
+                    <h3>Chaumukhji</h3>
+                    
+                  </div>
+                </div>
+                
+              </div>
+              <div class="box" >
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Vastupala_Vihara_Jain_temple_on_Girnar_hill.jpg" alt="">
+                <div class="overlay">
+                    <div class="content">
+                    <h3>Vastupala Vihara</h3>
+
+                    
+                  </div>
+                </div>
+                
+              </div> 
+              
+           
+            
+
+        </div>  
+        <div class="main_card">
+            <div class="main_box" >
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/18/5d/75/3a/nazarbagh-palace.jpg" alt="">
+                <div class="main_overlay">
+                   
+
+                  
+                </div>
+                
+              </div> 
+
+              
+
+              
+              
+           
+             
+        </div>
+    </div>
+    <h1><a href="GIRNAR_HILLS.html" style="color
+    :#333 ">Back</a></h1>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.card_List .box img').hover(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+            let src = $(this).attr('src')
+            $('.main_card img').attr('src',src);
+
+
+            
+            
+        });
+
+        $('.card_List .box contect').hover(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+            let src = $(this).attr('src')
+            $('.main_card contect').attr('src',src);
+            
+
+            
+            
+        });
+    });
+</script>
+</body>
+</html>

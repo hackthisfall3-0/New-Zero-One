@@ -1,0 +1,2040 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vadodara</title>
+<link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* body{
+        background-image: url("https://i.pinimg.com/564x/dd/37/c4/dd37c45b6d96e6b15059049edb5bbfff.jpg");
+    } */
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* position: sticky; */
+        top: 0;
+        cursor: pointer;
+        color: white;
+        background-color: rgb(201, 155, 5);
+
+
+
+    }
+
+    .nav-list {
+        width: 65%;
+        /* background: pink; */
+        display: flex;
+        align-items: center
+    }
+
+    .Logo {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-list li {
+        list-style: none;
+        padding: 19px 28px;
+
+
+    }
+
+    .nav-list li a {
+        text-decoration: none;
+        color:#fff;
+        padding: 23px 0;
+
+    }
+
+    .nav-list li a:hover {
+        text-decoration: none;
+        color: black;
+        background-color:white;
+
+    }
+
+    .right-nav {
+        /* background: greenyellow; */
+        width: 30%;
+        text-align: end;
+    }
+
+    h4:hover {
+        color: black;
+        cursor: pointer;
+    }
+
+    .background {
+        background-color: rgb(83, 154, 192);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+    }
+
+    .first_section {
+        height: 0vh;
+    }
+
+    #search {
+        padding: 5px;
+        font-size: 15px;
+        border: 2px solid black;
+        border-radius: 9px;
+    }
+
+    .btn-sn {
+        padding: 3px 10px;
+        vertical-align: middle;
+    }
+
+    .burger {
+        display: none;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 15px;
+    }
+
+    .line {
+        width: 33px;
+        background-color: black;
+        height: 4px;
+        margin: 6px 3px;
+    }
+
+    @media screen and (max-width: 1361px) {
+        .nav-list {
+            flex-direction: column;
+        }
+
+        .navbar {
+            height: 400px;
+            flex-direction: column;
+            transition: all 0.9s ease-out;
+        }
+
+        .right-nav {
+            text-align: center;
+        }
+
+        #search {
+            width: 100%;
+        }
+
+        .burger {
+            display: block;
+        }
+
+        .h-nav-resp {
+            height: 72px;
+        }
+
+        .v-class-resp {
+            opacity: 0;
+        }
+
+    }
+
+    @media screen and (max-width: 769px) {
+        .Logo {
+            width: 69%;
+        }
+    }
+
+    /* ===========================================
+                                CODE FOR slide_Bar
+                            ======================================= */
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+    .container {
+        position: relative;
+        background: #aad5f6;
+    }
+
+    .slide-1 {
+        background: url('https://www.gujarattourism.com/content/dam/gujrattourism/images/heritage-sites/laxmi-vilas-palace/Laxmi-Vilas-Palace-Banner1.jpg');
+    }
+
+    .slide-2 {
+        background: url('https://www.gujarattourism.com/content/dam/gujrattourism/images/flora--fauna/sursagar-lake/Sursagar-Lake-Banner.jpg');
+    }
+
+    .slide-3 {
+        background: url('https://www.aai.aero/sites/default/files/Airport%20Images/Picture1_2.jpg');
+    }
+
+    .slide {
+        width: 100%;
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .caption {
+        background: rgba(0, 0, 0, 0.03);
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 40px 0px;
+    }
+
+    .caption h3 {
+        color: #fff;
+        text-align: center;
+        top: 50px;
+        font-size: 50px;
+        padding: 18px;
+    }
+
+    .caption p {
+        max-width: 600px;
+        width: 90%;
+        margin: 0px auto;
+        color: #ccc;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+
+    .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 100;
+        /* background: rgba(0, 0, 0, .1); */
+        border-radius: 50%;
+        transform: background 500ms;
+    }
+
+    .arrow img {
+        width: 50px;
+    }
+
+    /* .arrow:hover {
+        background: rgba(0, 0, 0, .4);
+    } */
+
+    .l {
+        left: 0;
+    }
+
+    .r {
+        right: 0;
+    }
+
+    @media (max-width: 35rem) {
+        img {
+            height: 100%;
+        }
+
+        .caption h3 {
+            height: 100%;
+        }
+
+        .caption h3 p {
+            height: 100%;
+        }
+
+    }
+
+    /* ===========================================
+                                Introduction to kutch 
+                            ======================================= */
+
+    h1 {
+        text-transform: none;
+        text-align: center;
+        top: 50px;
+        font-size: 42px;
+        padding: 18px;
+
+    }
+
+    .content {
+        display: flex;
+        position: relative;
+        width: 90%;
+        height: 42%;
+        /* background: #fff; */
+        border-radius: 39px;
+        font-family: arial;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        transition: 1s box-shadow;
+        cursor: pointer;
+        margin: 25px;
+        font-size: 1.3rem;
+        text-align: justify;
+        left: 3%;
+    }
+
+    /* Below 560px  */
+    @media (max-width: 35em) {
+        .content {
+            padding: 0 1.3rem;
+            width: 90%;
+        }
+
+        .p {
+            padding: 1.2rem;
+        }
+    }
+
+    /* ===========================================
+                               css for intro to distance road,air,walk
+                            ======================================= */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+outline: none;
+} 
+
+body {
+font-family: 'Roboto', sans-serif;
+/* background: #18191a; */
+
+/* place-items: center; */
+}
+
+.row1 {
+width: 100%;
+min-height: 70vh;
+display: grid;
+width: 100%;
+max-width: 100%;
+display: grid;
+grid-template-columns: repeat(3, 4fr);
+grid-gap: 30px 20px;
+padding: 1rem 0;
+}
+
+.card-4 {
+position: relative;
+height: 182px;
+min-height: 347px;
+overflow: hidden;
+border-radius: 10px;
+cursor: pointer;
+box-shadow: 0 30px 40px rgba(0, 0, 0, 0.9);
+transform: scale(0.85);
+background-size: cover;
+background-position: left;
+background-repeat: no-repeat;
+transition: 0.3s ease;
+background-image: url(https://i.pinimg.com/474x/e4/50/17/e45017b34c89ee87761237277f3cfd9f.jpg);
+}
+
+.card-4:hover {
+background-position: right;
+transform: scale(1);
+background-image:none;
+}
+
+.card-4 .contentWrapper-4 {
+width: 100%;
+height: 100%;
+padding: 25px;
+background: linear-gradient(45deg,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.7));
+display: flex;
+justify-content: flex-start;
+align-items: flex-end;
+color: #fff;
+opacity: 0;
+}
+
+.card-4:hover .contentWrapper-4 {
+opacity: 1;
+}
+
+.contentWrapper-4 .content_4 {
+width: 0;
+overflow: hidden;
+transition: 0.3s ease;
+}
+
+.card-4:hover .contentWrapper-4 .content_4 {
+width: 100%;
+}
+
+.contentWrapper-4 .content_4 h3 {
+   font-size: 95px;
+   padding: 63px 57px;
+margin: 0px 10px;
+}
+
+.contentWrapper-4 .content_4 p {
+font-size: 16px;
+line-height: 24px;
+padding-bottom: 20px;
+justify-content:center;
+align-items: center;
+}
+
+.contentWrapper-4 .content_4 a {
+display: inline-block;
+text-transform: capitalize;
+text-decoration: none;
+color: #000;
+background: #fff;
+font-size: 16px;
+border-radius: 50px;
+padding: 10px 25px;
+}
+
+
+
+/* code for card-2 */
+
+.card-5 {
+position: relative;
+height: 182px;
+min-height: 347px;
+overflow: hidden;
+border-radius: 10px;
+cursor: pointer;
+box-shadow: 0 30px 40px rgba(0, 0, 0, 0.9);
+transform: scale(0.85);
+background-size: cover;
+background-position: left;
+background-repeat: no-repeat;
+transition: 0.3s ease;
+background-image: url(https://icon-library.com/images/airplane-icon-text/airplane-icon-text-13.jpg);
+}
+
+
+.card-5:hover {
+background-position: right;
+transform: scale(1);
+background-image: none;
+}
+
+.card-5 .contentWrapper-5 {
+width: 100%;
+height: 100%;
+padding: 25px;
+background: linear-gradient(45deg,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.7));
+display: flex;
+justify-content: flex-start;
+align-items: flex-end;
+color: #fff;
+opacity: 0;
+}
+
+.card-5:hover .contentWrapper-5 {
+opacity: 1;
+}
+
+.contentWrapper-5 .content_5 {
+width: 0;
+overflow: hidden;
+transition: 0.3s ease;
+}
+
+.card-5:hover .contentWrapper-5 .content_5 {
+width: 100%;
+}
+
+.contentWrapper-5 .content_5 h3 {
+   font-size: 95px;
+   padding: 61px 23px;
+margin: 2px 5px;
+}
+
+.contentWrapper-5 .content_5 p {
+font-size: 16px;
+line-height: 24px;
+padding-bottom: 20px;
+justify-content:center;
+align-items: center;
+}
+
+.contentWrapper-5 .content_5 a {
+display: inline-block;
+text-transform: capitalize;
+text-decoration: none;
+color: #000;
+background: #fff;
+font-size: 16px;
+border-radius: 50px;
+padding: 10px 25px;
+}
+
+
+/* code for slide-6 */
+.card-6 {
+position: relative;
+height: 182px;
+min-height: 347px;
+overflow: hidden;
+border-radius: 10px;
+cursor: pointer;
+box-shadow: 0 30px 40px rgba(0, 0, 0, 0.9);
+transform: scale(0.85);
+background-size: cover;
+background-position: left;
+background-repeat: no-repeat;
+transition: 0.3s ease;
+background-image: url(https://static.vecteezy.com/system/resources/previews/004/433/862/original/bus-icon-with-front-view-public-transportation-station-symbol-for-location-plan-free-vector.jpg);
+}
+
+.card-6:hover {
+background-position: right;
+transform: scale(1);
+background-image: none;
+}
+
+.card-6 .contentWrapper-6 {
+width: 100%;
+height: 100%;
+padding: 25px;
+background: linear-gradient(45deg,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.7));
+display: flex;
+justify-content: flex-start;
+align-items: flex-end;
+color: #fff;
+opacity: 0;
+}
+
+.card-6:hover .contentWrapper-6 {
+opacity: 1;
+}
+
+.contentWrapper-6 .content_6 {
+width: 0;
+overflow: hidden;
+transition: 0.3s ease;
+}
+
+.card-6:hover .contentWrapper-6 .content_6 {
+width: 100%;
+}
+
+.contentWrapper-6 .content_6 h3 {
+   font-size: 95px;
+   padding: 57px 91px;
+   margin: 4px 6px;
+}
+
+.contentWrapper-6 .content_6 p {
+font-size: 16px;
+line-height: 24px;
+padding-bottom: 20px;
+justify-content:center;
+align-items: center;
+}
+
+.contentWrapper-6 .content_6 a {
+display: inline-block;
+text-transform: capitalize;
+text-decoration: none;
+color: #000;
+background: #fff;
+font-size: 16px;
+border-radius: 50px;
+padding: 10px 25px;
+}
+
+@media (max-width: 991px) {
+.row1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+
+@media (max-width: 575px) {
+.row1 {
+    grid-template-columns: 1fr;
+}
+}
+
+@media screen and (max-width: 76.313rem) {
+.card-4 .card-5 .card-6 img {
+    width: 100%;
+}
+}
+
+
+@media screen and (max-width: 23.438rem) {
+.card-4 .card-5 .card-6 {
+    width: 100%;
+}
+}
+
+@media screen and (max-width:51.25rem) {
+.card-4 .card-5 .card-6{
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 57rem) {
+.card-4 .card-5 .card-6 {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 33.75rem) {
+.card-4 .card-5 .card-6 {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 17.5rem) {
+.card-4 .card-5 .card-6 {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 25.75rem) {
+.card-4 .card-5 .card-6 {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 64rem) {
+.card-4 .card-5 .card-6 {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 360px) {
+.card-4 .card-5 .card-6 {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 24rem) {
+.card-4 .card-5 .card-6 {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 40rem) {
+.card-4 .card-5 .card-6 {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 40rem) {
+.card-4 .card-5 .card-6 {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 24rem) {
+.card-4 .card-5 .card-6 {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 25.75rem) {
+.card-4 .card-5 .card-6{
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 375px) {
+.contentWrapper-5 .content_5 h3{
+    font-size: 73px;
+padding: 57px 15px;
+margin: 2px 2px;
+}
+.contentWrapper-4 .content_4 h3{
+    font-size: 71px;
+padding: 60px 71px;
+margin: 5px 9px;
+}
+.contentWrapper-6 .content_6 h3{
+    font-size: 71px;
+padding: 60px 56px;
+margin: 5px 9px;
+}
+.card-4 .card-5 .card-6 img {
+    width: 100%;
+}
+}
+@media screen and (max-width: 414px) {
+.contentWrapper-5 .content_5 h3{
+    font-size: 73px;
+padding: 57px 15px;
+margin: 2px 2px;
+}
+.contentWrapper-4 .content_4 h3{
+    font-size: 71px;
+padding: 60px 71px;
+margin: 5px 9px;
+}
+.contentWrapper-6 .content_6 h3{
+    font-size: 71px;
+padding: 60px 56px;
+margin: 5px 9px;
+}
+.card-4 .card-5 .card-6 img {
+    width: 100%;
+}
+}
+@media screen and (max-width: 820px) {
+.row1{
+    max-width: 61%;
+padding: 33px 14px;
+margin: 0px 169px;
+
+}
+.contentWrapper-5 .content_5 h3{
+    font-size: 73px;
+padding: 57px 15px;
+margin: 2px 2px;
+}
+.contentWrapper-4 .content_4 h3{
+    font-size: 71px;
+padding: 60px 71px;
+margin: 5px 9px;
+}
+.contentWrapper-6 .content_6 h3{
+    font-size: 71px;
+padding: 60px 56px;
+margin: 5px 9px;
+}
+.card-4 .card-5 .card-6 img {
+    width: 100%;
+}
+}
+@media screen and (max-width: 912px) {
+.row1{
+    max-width: 69%;
+padding: 33px 4px;
+margin: 0px 105px;
+
+}
+.contentWrapper-5 .content_5 h3{
+    font-size: 73px;
+padding: 57px 15px;
+margin: 2px 2px;
+}
+.contentWrapper-4 .content_4 h3{
+    font-size: 71px;
+padding: 60px 71px;
+margin: 5px 9px;
+}
+.contentWrapper-6 .content_6 h3{
+    font-size: 71px;
+padding: 60px 56px;
+margin: 5px 9px;
+}
+.card-4 .card-5 .card-6 img {
+    width: 100%;
+}
+}
+@media screen and (max-width: 280px) {
+.row1{
+    max-width: 67%;
+padding: 0px 0px;
+margin: 0px 52px;
+
+}
+.contentWrapper-5 .content_5 h3{
+    font-size: 35px;
+padding: 40px 0px;
+margin: 0px 3px;
+}
+.contentWrapper-4 .content_4 h3{
+    font-size: 40px;
+padding: 44px 16px;
+margin: 3px 7px;
+}
+.contentWrapper-6 .content_6 h3{
+    font-size: 40px;
+padding: 44px 16px;
+margin: 3px 7px;
+}
+.card-4 .card-5 .card-6 img {
+    width: 100%;
+}
+.card-4{
+    min-height: 247px;
+}
+.card-5{
+    min-height: 247px;
+}
+.card-6{
+    min-height: 247px;
+}
+
+}
+@media screen  and (max-width: 413px) {
+.row1{
+    max-width: 69%;
+padding: 32px 0px;
+margin: 0px 71px;
+
+}
+.contentWrapper-5 .content_5 h3{
+    font-size: 61px;
+padding: 56px 0px;
+margin: 2px 2px;
+}
+.contentWrapper-4 .content_4 h3{
+    font-size: 71px;
+padding: 60px 28px;
+margin: 5px 5px;
+}
+.contentWrapper-6 .content_6 h3{
+    font-size: 71px;
+padding: 60px 29px;
+margin: 5px 5px;
+}
+.card-4 .card-5 .card-6 img {
+    width: 100%;
+}
+}
+@media screen and (max-width: 1024px) {
+
+
+.contentWrapper-5 .content_5 h3{
+    font-size: 59px;
+padding: 56px 0px;
+margin: 2px 2px;
+}
+.contentWrapper-4 .content_4 h3{
+    font-size: 71px;
+padding: 60px 28px;
+margin: 5px 5px;
+}
+.contentWrapper-6 .content_6 h3{
+    font-size: 71px;
+padding: 60px 29px;
+margin: 5px 5px;
+}
+.card-4 .card-5 .card-6 img {
+    width: 100%;
+}
+}
+@media screen and (max-width: 360px) {
+.row1 {
+max-width: 69%;
+padding: 32px 0px;
+margin: 0px 71px;
+}
+.contentWrapper-5 .content_5 h3{
+    font-size: 51px;
+padding: 57px 1px;
+margin: 2px 2px;
+}
+.contentWrapper-4 .content_4 h3{
+    font-size: 60px;
+padding: 69px 22px;
+margin: 5px 9px;
+}
+.contentWrapper-6 .content_6 h3{
+    font-size: 60px;
+padding: 64px 23px;
+margin: 5px 9px;
+}
+.card-4 .card-5 .card-6 img {
+    width: 100%;
+}
+}
+@media screen and (max-width: 411px) {
+.row1 {
+max-width: 69%;
+padding: 32px 0px;
+margin: 0px 71px;
+}
+.contentWrapper-5 .content_5 h3{
+    font-size: 51px;
+padding: 57px 1px;
+margin: 2px 2px;
+}
+.contentWrapper-4 .content_4 h3{
+    font-size: 60px;
+padding: 69px 22px;
+margin: 5px 9px;
+}
+.contentWrapper-6 .content_6 h3{
+    font-size: 60px;
+padding: 64px 23px;
+margin: 5px 9px;
+}
+.card-4 .card-5 .card-6 img {
+    width: 100%;
+}
+}
+@media screen and (max-width: 320px) {
+.contentWrapper-5 .content_5 h3{
+    font-size: 44px;
+padding: 83px 0px;
+margin: 0px 0px;
+}
+.contentWrapper-4 .content_4 h3{
+    font-size: 44px;
+padding: 72px 31px;
+margin: 2px 2px;
+}
+.contentWrapper-6 .content_6 h3{
+    font-size: 44px;
+padding: 69px 28px;
+margin: 3px 4px;
+}
+.card-4 .card-5 .card-6 img {
+    width: 100%;
+}
+}
+@media screen and (max-width: 384px) {
+.contentWrapper-5 .content_5 h3{
+font-size: 40px;
+padding: 83px 0px;
+margin: 0px 0px;
+}
+.contentWrapper-4 .content_4 h3{
+    font-size: 44px;
+padding: 72px 31px;
+margin: 2px 2px;
+}
+.contentWrapper-6 .content_6 h3{
+    font-size: 44px;
+padding: 69px 28px;
+margin: 3px 4px;
+}
+.card-4 .card-5 .card-6 img {
+    width: 100%;
+}
+}
+@media screen and (min-width: 350px)and (max-width: 393px)  {
+.contentWrapper-5 .content_5 h3{
+    font-size: 53px;
+
+}
+}
+@media screen and  (min-width: 330px) and (max-width: 353px) {
+.contentWrapper-5 .content_5 h3{
+    font-size: 51px;
+
+}
+}
+@media screen and  (min-width: 220px) and (max-width: 240px) {
+.row1{
+    max-width: 65%;
+padding: 31px 0px;
+margin: 0px 44px;
+}
+.card-4{
+    min-height: 100%;
+    width: 107%;
+}
+.card-5{
+    min-height: 100%;
+    width: 107%;
+}
+.card-6{
+    min-height: 100%;
+    width: 107%;
+}
+.contentWrapper-5 .content_5 h3{
+    font-size: 30px;
+padding: 24px 0px;
+margin: 1px 2px;
+}
+.contentWrapper-5 .content_5 a {
+    font-size: 12px;
+padding: 6px 10px;
+margin: 1px 3px;
+}
+.contentWrapper-4 .content_4 h3{
+    font-size: 40px;
+padding: 15px 8px;
+margin: 2px 3px;
+}
+.contentWrapper-4 .content_4 a {
+    font-size: 12px;
+padding: 6px 10px;
+margin: 1px 3px;
+}
+.contentWrapper-6 .content_6 h3{
+    font-size: 40px;
+padding: 16px 8px;
+margin: 1px 2px;
+}
+.contentWrapper-6 .content_6 a {
+    font-size: 12px;
+padding: 6px 10px;
+margin: 1px 3px;
+}
+.card-4 .card-5 .card-6 img {
+    width: 100%;
+}
+}
+@media screen and (min-width: 1100px)and (max-width: 1280px) {
+
+.contentWrapper-5 .content_5 h3{
+    font-size: 73px;
+padding: 57px 15px;
+margin: 2px 2px;
+}
+.contentWrapper-4 .content_4 h3{
+    font-size: 71px;
+padding: 60px 71px;
+margin: 5px 9px;
+}
+.contentWrapper-6 .content_6 h3{
+    font-size: 71px;
+padding: 60px 56px;
+margin: 5px 9px;
+}
+.card-4 .card-5 .card-6 img {
+    width: 100%;
+}
+}
+
+
+
+
+    /* css for a slider  */
+
+
+
+    .wapper {
+        max-width: 102%;
+        position: relative;
+        padding: 0 15px;
+
+    }
+
+    .wapper i {
+        /* position: absolute; */
+        position: relative;
+        top: 50%;
+        height: 46px;
+        font: 1.2rem;
+        width: 46px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 46px;
+        background: rgba(78, 76, 76, 0.2);
+        border-radius: 50%;
+        transform: translateY(-50%);
+    }
+
+    .wapper i:first-child {
+        left: 8px;
+        display: none;
+        top: 224px;
+    }
+
+    .wapper i:last-child {
+        /* right: -3px; */
+        right: -96%;
+        top: -162px;
+    }
+
+    .wapper .carousel {
+        white-space: nowrap;
+        font-size: 0;
+        cursor: pointer;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+
+    .carousel .dragging {
+        cursor: grab;
+        scroll-behavior: auto;
+
+    }
+
+    .carousel .dragging img {
+        pointer-events: none;
+    }
+
+    .carousel img {
+        height: 340px;
+        object-fit: cover;
+        width: calc(100% /4);
+        margin-left: 14px;
+    }
+
+    .carousel img:first-child {
+        margin-left: 0;
+    }
+
+    @media screen and (max-width: 900px) {
+        .carousel img {
+            width: calc(100% /2);
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .wapper i:last-child {
+            right: -88%;
+
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        .carousel img {
+            width: calc(100% /1);
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .wapper i:last-child {
+            right: -88%;
+
+        }
+    }
+
+
+    @media screen and (max-width: 76.313rem) {
+        .fa-angle-right {
+            right: 25px;
+
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .wapper i:last-child {
+            right: -88%;
+
+        }
+    }
+
+
+    @media screen and (max-width: 23.438rem) {
+        .wapper i:last-child {
+            right: -88%;
+
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width:51.25rem) {
+        .wapper i:last-child {
+            right: -94%;
+
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 57rem) {
+        .carousel img {
+            width: calc(100% /3);
+        }
+
+        .wapper i:last-child {
+            right: -94%;
+
+        }
+    }
+
+    @media screen and (max-width: 33.75rem) {
+        .carousel img {
+            width: calc(100% /2);
+        }
+
+        .wapper i:last-child {
+            right: -92%;
+
+        }
+    }
+
+    @media screen and (max-width: 17.5rem) {
+        .carousel img {
+            width: calc(100% /1);
+        }
+
+        .wapper i:last-child {
+            right: -81%;
+
+        }
+    }
+
+    @media screen and (max-width: 25.75rem) {
+        .carousel img {
+            width: calc(100% /1);
+        }
+
+        .wapper i:last-child {
+            right: -87%;
+
+        }
+    }
+
+    @media screen and (max-width: 64rem) {
+        .carousel img {
+            width: calc(100% /3);
+        }
+
+        .wapper i:last-child {
+            right: -95%;
+
+        }
+    }
+
+    @media screen and (max-width: 22.5rem) {
+        .carousel img {
+            width: calc(100% /1);
+        }
+
+        .wapper i:last-child {
+            right: -88%;
+
+        }
+    }
+
+    @media screen and (max-width: 24rem) {
+        .carousel img {
+            width: calc(100% /1);
+        }
+
+        .wapper i:last-child {
+            right: -88%;
+
+        }
+    }
+
+    @media screen and (max-width: 40rem) {
+        .carousel img {
+            width: calc(100% /2);
+        }
+
+        .wapper i:last-child {
+            right: -92%;
+
+        }
+    }
+
+    @media screen and (max-width: 40rem) {
+        .carousel img {
+            width: calc(100% /2);
+        }
+
+        .wapper i:last-child {
+            right: -92%;
+
+        }
+    }
+
+    @media screen and (max-width: 24rem) {
+        .carousel img {
+            width: calc(100% /1);
+        }
+
+        .wapper i:last-child {
+            right: -87%;
+
+        }
+    }
+
+    @media screen and (max-width: 25.75rem) {
+        .carousel img {
+            width: calc(100% /1);
+        }
+
+        .wapper i:last-child {
+            right: -87%;
+
+        }
+    }
+
+
+
+
+
+    /* ===========================================
+                                          CODE FOR POPULAR PLACES
+                             ======================================= */
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        /* background: #18191a; */
+
+        /* place-items: center; */
+    }
+
+    .row {
+        width: 100%;
+        min-height: 100vh;
+        display: grid;
+        width: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px 20px;
+        padding: 1rem 0;
+    }
+
+    .card {
+        position: relative;
+        height: 400px;
+        min-height: 400px;
+        overflow: hidden;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0 30px 40px rgba(0, 0, 0, 0.9);
+        transform: scale(0.85);
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        transition: 0.3s ease;
+    }
+
+    .card:hover {
+        background-position: right;
+        transform: scale(1);
+    }
+
+    .card .contentWrapper {
+        width: 100%;
+        height: 100%;
+        padding: 25px;
+        background: linear-gradient(45deg,
+                rgba(0, 0, 0, 1),
+                rgba(0, 0, 0, 0.7));
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        color: #fff;
+        opacity: 0;
+    }
+
+    .card:hover .contentWrapper {
+        opacity: 1;
+    }
+
+    .contentWrapper .content_1 {
+        width: 0;
+        overflow: hidden;
+        transition: 0.3s ease;
+    }
+
+    .card:hover .contentWrapper .content_1 {
+        width: 100%;
+    }
+
+    .contentWrapper .content_1 h3 {
+        font-size: 24px;
+        padding-bottom: 15px;
+    }
+
+    .contentWrapper .content_1 p {
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 20px;
+    }
+
+    .contentWrapper .content_1 a {
+        display: inline-block;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: #000;
+        background: #fff;
+        font-size: 16px;
+        border-radius: 50px;
+        padding: 10px 25px;
+    }
+
+    @media (max-width: 991px) {
+        .row {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 575px) {
+        .row {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media screen and (max-width: 76.313rem) {
+        .card img {
+            width: 100%;
+        }
+    }
+
+
+    @media screen and (max-width: 23.438rem) {
+        .card img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width:51.25rem) {
+        .card img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 57rem) {
+        .card img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 33.75rem) {
+        .card img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 17.5rem) {
+        .card img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 25.75rem) {
+        .card img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 64rem) {
+        .card img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 22.5rem) {
+        .card img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 24rem) {
+        .card img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 40rem) {
+        .card img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 40rem) {
+        .card img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 24rem) {
+        .card img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 25.75rem) {
+        .card img {
+            width: 100%;
+        }
+
+    }
+
+
+
+    /* ===========================================
+                                          CODE FOR FOOTER
+                             ======================================= */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    body {
+        line-height: 1.5;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container_1 {
+        max-width: 1170px;
+        margin: auto;
+    }
+
+    .row_1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .footer {
+        background-color: #24262b;
+        padding: 70px 0;
+    }
+
+    .footer-col {
+        width: 25%;
+        padding: 0 15px;
+    }
+
+    .footer-col h4 {
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+
+    .footer-col h4::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+
+    .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    .footer-col ul li a:hover {
+        color: #ffffff;
+        padding-left: 8px;
+    }
+
+    .footer-col .social-links a {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+
+    .footer-col .social-links a:hover {
+        color: #24262b;
+        background-color: #ffffff;
+    }
+
+    /* responsive */
+    @media(max-width: 767px) {
+        .footer-col {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media(max-width: 574px) {
+        .footer-col {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+
+<body>
+<nav class="navbar background h-nav-resp" >
+    <ul class="nav-list v-class-resp">
+        <div class="Logo">
+            <H4> GUJARAT પરિભ્રમણ</H4>
+        </div>
+        <li><a href="Home_page.html">HOME</a></li>
+        <li><a href="Vadodara.html">VADODARA </a></li>
+        <li><a href="Kutch.html">KUTCH</a></li>
+        <li><a href="Ahmedabad.html">AHMEDABAD</a></li>
+        <li><a href="junagadh.html">JUNAGADH</a></li>
+    </ul>
+    <div class="right-nav v-class-resp ">
+        <input type="text" class="search" id="search" placeholder="search here">
+        <button class="btn-sn">search</button>
+    </div>
+    <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+
+
+    </div>
+</nav>
+<section class="background first_section">
+    </div>
+</section>
+<!-- /* ===========================================
+                                          CODE FOR MAIN_SLIDER
+                             ======================================= */ -->
+<div class="container">
+    <div class="arrow l" onclick="prev()">
+        <img src="https://img.icons8.com/ios-filled/512/less-than-2.png"
+            alt="l">
+    </div>
+
+    <div class="slide slide-1">
+        <div class="caption">
+            <h3>Vadodara</h3>
+            <p>The Media wanted to speak since morning.But I wanted to speak to Vadodara first Vadodara has first right on me.</p>
+        </div>
+    </div>
+
+    <div class="slide slide-2">
+        <div class="caption">
+            <h3>Vadodara</h3>
+            <p>Sunset at the Little Cultural City</p>
+        </div>
+    </div>
+
+    <div class="slide slide-3">
+        <div class="caption">
+            <h3>Vadodara</h3>
+            <p>Thank you!</p>
+        </div>
+    </div>
+    <div class="arrow r" onclick="next()">
+        <img src="https://img.icons8.com/ios-filled/2x/more-than-2.png"
+            alt="r">
+    </div>
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236213.5025572115!2d73.03265440561701!3d22.32204218280053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8ab91a3ddab%3A0xac39d3bfe1473fb8!2sVadodara%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1675226310680!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- ======================================== 
+                                 Introduction to kutch  
+                        ========================================  -->
+<h1>Introduction</h1>
+<div class="content">
+    <p>
+    <table> Vadodara also known as Baroda, is the second largest city in the Indian state of Gujarat. The city sits on the banks of the Vishwamitri River, in central Gujarat. The city is located on the fertile plain between the Mahi and Narmada Rivers.The railway line and National Highway 8, which connect Delhi with Mumbai, pass through Vadodara. The city is named for its abundance of the Banyan tree. Vadodara is also locally referred to as the Sanskari Nagari and Kala Nagari of India.The city in one period  was called Chandanavati after the rule of Chanda of the Dodiya Rajputs. The capital was also known as Virakshetra or Viravati. Later on it was known as Vadpatraka or Vadodara and according to tradition is a corrupt form of the Sanskrit word vatodar, meaning "in the belly of the Banyan tree". It is as of 2000 almost impossible to ascertain when the various changes in the name were made early English travellers and merchants of the 18th century mention the town as Baroda and it is from this, that the name Baroda is derived in 1974 the official name of the city was changed to Vadodara.
+
+        </p>
+    </table>
+</div>
+<!-- ======================================== 
+                                 code for location 
+                        ========================================  -->
+
+
+    <!-- <h1 class="h-Primary center">Our Services</h1> -->
+    <h1>Find The Easiest Route</h1>
+    <div class="row1">
+        <div class="card-4">
+            <div class="contentWrapper-4">
+                <div class="content_4">
+                    <h3>Train</h3>
+                    <a href="train_Baroda.html">See More...</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-5">
+            <div class="contentWrapper-5">
+                <div class="content_5">
+                    <h3>Airplane</h3>
+                    <a href="air_Plane_baroda.html">See More...</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-6">
+            <div class="contentWrapper-6">
+                <div class="content_6">
+                    <h3>Road</h3>
+                    <a href="road_page_baroda.html">See More...</a>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+
+<!-- /* ===========================================
+                                          CODE FOR PICTURE_SLIDER
+                             ======================================= */ -->
+<div class="wapper">
+    <i id="left" class="fa-solid fa-angle-left"></i>
+    <div class="carousel">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/95/24/1c/ajwa-garden.jpg?w=1200&h=1200&s=1"
+            alt="img" draggable="false">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/18/5d/75/3a/nazarbagh-palace.jpg"
+            alt="img" draggable="false">
+        <img src="https://www.trawell.in/admin/images/upload/461310867BAPS_Swaminarayan_Mandir_Main.jpg"
+            alt="img" draggable="false">
+        <img src="https://sandeepachetan.com/wp-content/uploads/2014/12/IN_CHA1206156110-Jami-Masjid-Minarets-flanking-central-arched-opening-N-GJ-91.jpg"
+            alt="img" draggable="false">
+        <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/06/Vadodara-cover.jpg"
+            alt="img" draggable="false">
+        <img src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/202103221101136718-a30988f8011e11edaf390a58a9feac02.jpg?&output-quality=75&downsize=910:612&crop=910:612;3,0&output-format=jpg"
+            alt="img" draggable="false">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Kirti_Mandir%2C_Vadadora_%28Baroda%29_-_India_%283-2%29_%288147894472%29.jpg"
+            alt="img" draggable="false">
+        <img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/03/Surya-Narayan-Temple.jpg"
+            alt="img" draggable="false">
+        <img src="https://www.travelmyglobe.com/images/Uploaded/Kirti%20Stambha.jpg"
+            alt="img" draggable="false">
+
+
+
+    </div>
+    <i id="right" class="fa-solid fa-angle-right"></i>
+
+</div>
+
+<!-- /* ===========================================
+                                              CODE FOR POPULAR PLACES
+                                 ======================================= */ -->
+                                 <h1>Popular Places in Vadodara</h1>
+<div class="row">
+    <div class="card"
+        style="background-image: url(https://www.garhatours.in/wp-content/uploads/2016/01/featured_laxmi_vilas_palace_vadodra_gujarat.jpg);">
+        <div class="contentWrapper">
+            <div class="content_1">
+                <h3>Laxmi Vilas Palace</h3>
+                <p>Constructed in 1890 by Maharaja Sayajirao Gaekwad III, the colossal palace is the largest private abode constructed till date and is four times larger than the Buckingham Palace in London. Among the major attractions of the palace are the Darbar Hall that features the Raja’s throne and ornate artwork, the Moti Baug Palace and the Maharaja Fateh Singh Museum.</p>
+                <a href="#">See More...</a>
+            </div>
+        </div>
+    </div>
+    <div class="card"
+        style="background-image: url(https://www.trawell.in/admin/images/upload/461310522Vadodara_EME_Temple.jpg);">
+        <div class="contentWrapper">
+            <div class="content_1">
+                <h3>EME Temple</h3>
+                <p>Also known as the Dakshinamurty Temple, the EME Temple is a Shiva shrine managed by the Indian Army. Covered with aluminium sheets, the geodesic structure of the temple presents a striking sight. Sculpture art dating back to the 7th to 15thcenturies define the beauty of the garden surrounding this temple.</p>
+                <a href="#">See More...</a>
+            </div>
+        </div>
+    </div>
+    <div class="card"
+        style="background-image: url(https://cdn.tripuntold.com/media/photos/location/2019/03/21/328b72bb-10db-43e0-a33f-f7ddc3119f8b.jpg);">
+        <div class="contentWrapper">
+            <div class="content_1">
+                <h3>Jambughoda Wildlife Sanctuary</h3>
+                <p>Jambughoda Wildlife Sanctuary makes for a great spot for a one-day picnic with your family and kids. If you are a wildlife enthusiast, you will be delighted to spot not just wild animals but a variety of reptiles and birds as well in this forest reserve.</p>
+                <a href="#">See More...</a>
+            </div>
+        </div>
+    </div>
+    <div class="card"
+        style="background-image: url(https://touristinformationcenter.net/wp-content/uploads/2021/09/Ajwa-Water-Park-1.jpg);">
+        <div class="contentWrapper">
+            <div class="content_1">
+                <h3>Ajwa Water Park</h3>
+                <p>The water park is located inside Ajwa Fun World and provides an enticing respite from the scorching heat of the Vadodara city. With amazing attractions like the Rain Dance, the Dark Hole Slide, Pendulum Slide,Body Slide and lots of you can look forward to a great time at this water park.</p>
+                <a href="#">See More...</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118106.71283251693!2d73.10304564575807!3d22.322087608593613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8ab91a3ddab%3A0xac39d3bfe1473fb8!2sVadodara%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1672832765643!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p> -->
+</div>
+
+<!-- /* ===========================================
+                                          CODE FOR FOOTER
+                             ======================================= */ -->
+
+                             <footer class="footer">
+                                <div class="container_1">
+                                    <div class="row_1">
+                                        <div class="footer-col">
+                                            <h4>company</h4>
+                                            <ul>
+                                                <li><a href="Home_page.html">HOME</a></li>
+                                                <li><a href="Vadodara.html">VADODARA </a></li>
+                                                <li><a href="Kutch.html">KUTCH</a></li>
+                                                <li><a href="Ahmedabad.html">AHMEDABAD</a></li>
+                                                <li><a href="junagadh.html">JUNAGADH</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="aboutme">
+                                            <h4 style="font-size: 18px;
+                                            color: #ffffff;
+                                            text-transform: capitalize;
+                                            margin-bottom: 35px;
+                                            font-weight: 500;
+                                            position: relative;">About Him</h4>
+                                            <p style="color
+                                            :#ffffff;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, assumenda.</p>
+                                        </div>
+                                        
+                                           
+                                        <div class="footer-col">
+                                            <h4 >follow us</h4>
+                                            <div class="social-links">
+                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </footer>
+
+
+
+<!-- ======================================== 
+                                Our JavaScript Section Start  
+                        ========================================  -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+<!-- <script src="js/js2.js"></script> -->
+
+
+<!--1. script for nav bar  -->
+<script>
+    burger = document.querySelector('.burger')
+    navbar = document.querySelector('.navbar')
+    navlist = document.querySelector('.nav-list')
+    rightnav = document.querySelector('.right-nav')
+
+    burger.addEventListener('click', () => {
+        rightnav.classList.toggle('v-class-resp')
+        navlist.classList.toggle('v-class-resp')
+        navbar.classList.toggle('h-nav-resp')
+
+
+    }) 
+</script>
+<!-- 2. script for slide bar -->
+
+<script>
+    let slide = document.querySelectorAll('.slide');
+    var current = 0;
+
+    function cls() {
+        for (let i = 0; i < slide.length; i++) {
+            slide[i].style.display = 'none';
+        }
+    }
+
+    function next() {
+        cls();
+        if (current === slide.length - 1) current = -1;
+        current++;
+
+        slide[current].style.display = 'block';
+        slide[current].style.opacity = 0.4;
+
+        var x = 0.4;
+        var intX = setInterval(function () {
+            x += 0.1;
+            slide[current].style.opacity = x;
+            if (x >= 1) {
+                clearInterval(intX);
+                x = 0.4;
+            }
+        }, 100);
+
+    }
+
+    function prev() {
+        cls();
+        if (current === 0) current = slide.length;
+        current--;
+
+        slide[current].style.display = 'block';
+        slide[current].style.opacity = 0.4;
+
+        var x = 0.4;
+        var intX = setInterval(function () {
+            x += 0.1;
+            slide[current].style.opacity = x;
+            if (x >= 1) {
+                clearInterval(intX);
+                x = 0.4;
+            }
+        }, 100);
+
+    }
+
+    function start() {
+        cls();
+        slide[current].style.display = 'block';
+    }
+    start();
+</script>
+<script>
+    //CODE FOR PICTURE_SLIDER
+
+
+    const carousel = document.querySelector(".carousel"),
+        firstImg = carousel.querySelectorAll("img")[0];
+    arrowIcons = document.querySelectorAll(".wapper i");
+
+    //script for arrow icons 
+    arrowIcons.forEach(icon => {
+        icon.addEventListener("click", () => {
+            let firstImgWidth = firstImg.clientWidth + 14; //get first img width & add 14margin value 
+            //if check icon is left reduce width value from the carouselscroll left else add to eat
+            carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth
+            setTimeout(() => showHideIcons(), 60) //call hidden icon in 60ms
+        });
+    });
+
+    //Script for auto slider for image
+
+    const autoSlide = () => {
+
+        if (carousel.scrollLeft == (carousel.scrolWidth - carousel.clientWidth)) return;
+        // get different value  that needs to add and reduce carousel left to take middel img center
+        positionDiff = Math.abs(positionDiff);
+        let firstImgWidth = firstImg.clientWidth + 14;
+        let valDifference = firstImgWidth - positionDiff
+        if (carousel.scrollLeft > prevScrolleft) {
+            //logic for this line 
+            // return carousel.scrollLeft += positionDiff > firstImgWidth /3 ? valDifference : - positionDiff // scroling to the right 
+
+            //  if you didn't understand ternary if else 
+            // you can write like this too. Both do same
+
+            //  if(positionDiff > firstImgWidth / 3)
+            //   {
+            //      carousel.scrollLeft += valDifference; 
+            //     }
+            //      else {
+            //         carousel.scrollLeft positionDiff ;
+            //     }
+
+
+            return carousel.scrollLeft += positionDiff > firstImgWidth / 4 ? valDifference : - positionDiff // scroling to the right 
+        }
+        carousel.scrollLeft -= positionDiff > firstImgWidth / 4 ? valDifference : - positionDiff // scroling to left
+
+
+    }
+
+
+
+    // //  if you didn't understand ternary if else 
+    // // you can write like this too. Both do same
+
+    // //  if(positionDiff > firstImgWidth / 3)
+    // //   {
+    // //      carousel.scrollLeft += valDifference; 
+    // //     }
+    // //      else {
+    // //         carousel.scrollLeft positionDiff ;
+    // //     }
+
+
+
+    const showHideIcons = () => {
+        //showing to the hidden icon accoding to carousl scroll left value
+        let scrollWidth = carousel.scrollWidth - carousel.clientWidth; //get max scroll bar width 
+        arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block"
+        arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block"
+
+    }
+
+    let isDragStart = false, isDragging = false, prevPageX, prevScrolleft, positionDiff;
+    const dragStart = (e) => {
+        // update the globel variables value on mouse down event    
+        isDragStart = true;
+        prevPageX = e.pageX || e.touches[0].pageX;
+        prevScrolleft = carousel.scrollLeft;
+    }
+
+    const dragging = (e) => {
+        // scroll images /carousel to left accoding to mouse pointer 
+        if (!isDragStart) return;
+        e.preventDefault();
+        isDragging = true;
+        carousel.classList.add("dragging")
+        //scrollLeft return the nunber of pixel an element content scroll horizontel
+        // pageX return the horizontel cooridinate of mouse while
+        positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+        carousel.scrollLeft = prevScrolleft - positionDiff;
+        showHideIcons()
+    }
+
+    const dragStop = () => {
+        isDragStart = false;
+        carousel.classList.remove("dragging")
+        if (isDragging) return;
+        isDragging = false;
+        autoSlide();
+
+    }
+
+    carousel.addEventListener("mousedown", dragStart)
+    carousel.addEventListener("touchstart", dragStart)
+
+
+    carousel.addEventListener("mousemove", dragging)
+    carousel.addEventListener("touchmove", dragging)
+
+
+    carousel.addEventListener("mouseup", dragStop)
+    carousel.addEventListener("mouseleave", dragStop)
+    carousel.addEventListener("touchend", dragStop)
+</script>
+
+
+</body>
+
+</html>
